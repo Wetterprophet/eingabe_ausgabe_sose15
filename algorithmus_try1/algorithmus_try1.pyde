@@ -10,6 +10,8 @@ def setup():
     inix = int(random(0, 10))
     iniy1 = int(random(0, height))
     iniy2 = int(random(0, height))
+    while iniy1 == iniy2:
+        iniy2 = int(random(0, height))
     print inix, iniy1, iniy2
     background(255)
     stroke(0)
