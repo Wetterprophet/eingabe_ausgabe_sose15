@@ -1,3 +1,4 @@
+#hello world
 hght = 420
 wdth = 1188
 #size(1188,420)               #define window size - doesnt work unless in setup
@@ -10,7 +11,6 @@ while iniy1 == iniy2 :
 cnt = 0                     #define count and assign value 0
 x = 0
 isw = int(random (1,5))    #initial strokeweight random
-
 
 x_values=[]                 #create a list to hold the x values
 y_values=[]                 #create a list to hold the y values
@@ -62,20 +62,7 @@ def draw():
     first_xy_value = int random(nr_of_xy_values-sides+1;nr_of_xy_values-count-1)     #use open points of the old polygon to set first point of new polygon
     second_xy_value = first_xy_value + 1                                             #set next point of old polygon as second start point for new polygon
     
-    
-    
-    
-    
-    
-    
-    
-    
-    delay(100)
     global x, inix, cnt, isw
- 
-    
-      
-        
     y=year()
     mo=month()
     d=day() 
@@ -84,19 +71,11 @@ def draw():
     s=second()
     timestamp = str(str(y)+"-"+str(mo)+"-"+str(d)+"-"+str(h)+"-"+str(m)+"-"+str(s))
  #   print(timestamp)
-
-    
- 
-    
 #    while cnt<= second():
-        
-#    noLoop()
-        
+    noLoop()
+
     cnt=cnt+1
     print ('count',  cnt)
-        
-        
-        
     colorMode(HSB, 255)       #set color mode to HSB - max value = 255
     hu= int(random(0,255))    #random color
     sa= int(random(150,255))
